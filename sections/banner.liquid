@@ -9,16 +9,16 @@
 <style>
     .banner-wrapper {
         background: {{ section.settings.background }};
-        color: {{ section.settings.text_color }};
+        padding: 30px;
+        position: relative;
         
     }
 
    .slide-text {
     position: absolute;
-    top: 155px;
     left: -150%;
     transform: translate(0, -50%);
-    color: black;
+    color:{{ section.settings.text_color }};
     padding: 20px;
     font-size: 20px;
     transition: left 0.5s ease-in-out;
