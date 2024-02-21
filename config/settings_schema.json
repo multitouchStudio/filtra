@@ -1,7 +1,4 @@
 [
-<<<<<<< HEAD
-
-=======
     {
         "name": "theme_info",
         "theme_name": "Starter theme",
@@ -27,5 +24,4 @@
       }
     ]
   }
->>>>>>> 96524cc (added 404 page)
 ]

@@ -1,0 +1,86 @@
+<section class="more-info">
+    <div class="more-info-wrapper">
+        {% if section.settings.text1 != blank %}
+            <h1>{{ section.settings.text1 }}</h1>
+        {% else %}
+            <h1>Default Title</h1>
+        {% endif %}
+        {% if section.settings.text2 != blank %}
+            <p>{{ section.settings.text2 }}</p>
+        {% else %}
+            <p>Some default text</p>
+        {% endif %}
+        <button>Shop</button>
+    </div>
+</section>
+
+
+<style>
+    .more-info {
+        background: {{ section.settings.background }};
+        color: {{ section.settings.text_color }};
+        display: flex;
+        justify-content: center;
+    }
+
+    .more-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more-info-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .more-info-wrapper button {
+        padding: 10px 20px 10px 20px;
+        margin: 20px;
+        background-color: black;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .more-info-wrapper button:hover {
+      background-color: rgb(185, 185, 185);
+   }
+</style>
+
+{% schema %}
+    {
+        "name": "More-info",
+        "settings": [
+            {
+                "type": "color",
+                "id": "background",
+                "label": "Background",
+                "default": "#F4F4F4"
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "Text",
+                "default": "#000"
+            },
+            {
+                "type": "text",
+                "id": "text1",
+                "label": "Text1"
+            },
+            {
+                "type": "text",
+                "id": "text2",
+                "label": "Slide Text 2"
+            }
+        ],
+        "presets": [
+            {
+                "name": "more-info"
+            }
+        ]
+    }
+    {% endschema %}
