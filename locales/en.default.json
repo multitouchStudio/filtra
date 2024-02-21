@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "general": {
-    "continue_shopping": "Continue shopping"
-  },
-  "templates": {
-    "404": {
-      "title": "Page not found",
-      "subtext": "404"
-=======
     "general":  {
         "continue_shopping": "Continue shopping"
     },
@@ -16,7 +7,5 @@
             "title": "Page not found today",
             "subtext": "404"
         }
->>>>>>> 6d28d31 (changed 404)
     }
   }
-}
