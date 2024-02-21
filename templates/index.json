@@ -1,31 +1,23 @@
 {
-    "sections": {
-        "banner": {
-            "type": "banner",
-            "settings": {}
-        },
-        "three-images": {
-            "type": "three-images",
-            "settings": {}
-        },
-        "more-info": {
-            "type": "more-info",
-            "settings": {}
-        },
-        "all-collections": {
-            "type": "all-collections",
-            "settings": {}
-        },
-        "all-products": {
-            "type": "all-products",
-            "settings": {}
-        } 
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "background": "#F4F4F4",
+        "text_color": "#000",
+        "slide_text_1": "Members Free Shipping",
+        "slide_text_2": "Save Up to 40%",
+        "slide_text_3": "Get Your Gear Faster"
+      }
     },
-    "order": [
-        "banner",
-        "three-images",
-        "more-info",
-        "all-collections",
-        "all-products"
-    ]
+    "three_images_Ccy4Jt": {
+      "type": "three-images",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "three_images_Ccy4Jt"
+  ]
 }
