@@ -1,0 +1,60 @@
+<section class="login-section">
+    {% form 'customer_login' %}
+        {{ form.errors |  default_errors }}
+        <div class="login-form">
+            <div class="email">
+                <input type="email" placeholder="email" name="customer[email]">
+            </div>
+            <div class="password">
+                <input type="password" name="customer[password]" placeholder="password">
+            </div>
+            <div>
+                <div class="submit">
+                    <input type="submit" value="Sign in">
+                </div>
+            </div>
+        </div>
+    {% endform %}
+</section>
+
+
+<style>
+    .login-sectioon {
+        background-color: rgb(226, 226, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-form {
+        background-color: white;
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form input[type='submit'] {
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+    }
+    .login-form input[type='submit']:hover {
+        background-color: #2980b9;
+    }
+
+    .login-form div {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+{% schema %}
+    {
+        "name": "Login"
+    }
+{% endschema %}
